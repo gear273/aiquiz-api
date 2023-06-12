@@ -26,3 +26,6 @@ app.post('/quiz', async (req, res) => {
 app.listen(port, () => {
   console.log(`aiquiz api listening`);
 });
+
+// Export the Express API
+module.exports = app;
