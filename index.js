@@ -9,7 +9,7 @@ const generator = require('./generator')
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send("ulamisty's aiquiz");
+  res.send("github: https://github.com/ulemisty/aiquiz-api");
 });
 
 app.post('/quiz', async (req, res) => {
