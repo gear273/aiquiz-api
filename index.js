@@ -24,5 +24,5 @@ app.post('/quiz', async (req, res) => {
   })
 
 app.listen(port, () => {
-  console.log(`aiquiz api listening at http://localhost:${port}`);
+  console.log(`aiquiz api listening`);
 });
