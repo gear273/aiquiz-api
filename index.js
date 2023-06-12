@@ -1,4 +1,4 @@
-const apiKey = "your-api-key";
+const apiKey = process.env.OPENAI_KEY;
 
 const express = require('express');
 const app = express();
