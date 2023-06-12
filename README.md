@@ -51,3 +51,11 @@ The API returns the generated question in JSON format:
   "wrongAnswer3": "wrong answer"
 }
 ```
+
+To use the API hosted on Vercel, you can make a POST request to the following URL:
+
+```
+https://aiquiz-api.vercel.app/quiz
+```
+
+I hope this helps you use the AIquiz API!
