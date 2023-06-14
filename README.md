@@ -58,4 +58,18 @@ To use the API hosted on Vercel, you can make a POST request to the following UR
 https://aiquiz-api.vercel.app/quiz
 ```
 
-I hope this helps you use the AIquiz API!
+## Plan of Development
+
+### v0.1.0 (current)
+- [x] Generate one question and four answers for a given topic
+
+### v1.0.0
+- [ ] Modernize req and res
+- [ ] Add language choice
+- [ ] Add more than one question generation
+
+### v2.0.0
+- [ ] Image generation
+- [ ] Add number of answers choice
+- [ ] Add multiple-choice
+- [ ] Other features
