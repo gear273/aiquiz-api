@@ -16,7 +16,7 @@ app.post('/quiz', async (req, res) => {
     
     const requestBody = req.body;
 
-    let quiz = await generator.generateQuestion(apiKey,requestBody.theme,requestBody.lang);
+    let quiz = await generator.generateQuestion(apiKey,requestBody.theme,requestBody.lang, requestBody.answers);
     
 
     res.send(quiz);
