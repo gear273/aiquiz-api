@@ -36,7 +36,8 @@ The API has a single route `/quiz` that accepts POST requests with a JSON body:
 
 ```json
 {
-  "theme": "topic"
+  "theme": "topic",
+  "lang": "language"
 }
 ```
 
@@ -45,10 +46,12 @@ The API returns the generated question in JSON format:
 ```json
 {
   "question": "question",
-  "answer": "correct answer",
-  "wrongAnswer1": "wrong answer",
-  "wrongAnswer2": "wrong answer",
-  "wrongAnswer3": "wrong answer"
+  "correctAnswer": "correct answer",
+  "incorrectAnswers": [
+    "wrong answer 1",
+    "wrong answer 2",
+    "wrong answer 3"
+  ]
 }
 ```
 
@@ -64,8 +67,8 @@ https://aiquiz-api.vercel.app/quiz
 - [x] Generate one question and four answers for a given topic
 
 ### v1.0.0
-- [ ] Modernize req and res
-- [ ] Add language choice
+- [x] Modernize req and res
+- [x] Add language choice
 - [ ] Add more than one question generation
 
 ### v2.0.0
