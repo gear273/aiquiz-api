@@ -1,6 +1,17 @@
-const generateQuestion = async (apiKey, theme) => {
+const generateQuestion = async (apiKey, theme, lang, answers) => {
   const url = "https://api.openai.com/v1/completions";
-  const temp = `Create a trivia question on the topic ${theme} with a definitive answer, providing the correct answer and three incorrect answers in JSON format: { "question": "//question", "answer": "//correct answer", "wrongAnswer1": "//wrong answer", "wrongAnswer2": "//wrong answer", "wrongAnswer3": "//wrong answer" }`;
+  const temp = `Please provide a trivia question on the topic of ${theme} in ${lang} language with a definitive answer and ${answers} incorrect answers in the following JSON format: 
+
+  {
+      "question": "question",
+      "correctAnswer": "correct answer",
+      "incorrectAnswers": [
+          "wrong answer 1",
+          "wrong answer 2",
+          "wrong answer 3",
+          ...
+      ]
+  }`;
 
   const requestOptions = {
     method: "POST",
