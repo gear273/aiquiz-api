@@ -63,13 +63,13 @@ https://aiquiz-api.vercel.app/quiz
 
 ## Plan of Development
 
-### v0.1.0 (current)
+### v0.1.0
 - [x] Generate one question and four answers for a given topic
 
-### v1.0.0
+### v1.0.0 (current)
 - [x] Modernize req and res
 - [x] Add language choice
-- [ ] Add more than one question generation
+- [ ] ~~Add more than one question generation~~
 
 ### v2.0.0
 - [ ] Image generation
