@@ -1,6 +1,6 @@
 {
   "name": "aiquiz",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ai quiz api v1",
   "main": "index.js",
   "scripts": {
